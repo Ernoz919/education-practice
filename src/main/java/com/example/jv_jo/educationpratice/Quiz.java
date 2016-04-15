@@ -19,14 +19,19 @@ public class Quiz extends AppCompatActivity {
     private EditText e2;
     private EditText f2;
 
-    private EditText yearWarII;
+    private EditText fourEdit;
     private EditText causedWarII;
+
+    private EditText fiveEdit;
 
     private String[] quests;
     private String quest;
 
     private String[] TwoQuests;
     private String TwoQuest;
+
+    private String threeQuest;
+    private String threeAnswer;
 
     private String answerOne;
     private String answerTwo;
@@ -90,11 +95,21 @@ public class Quiz extends AppCompatActivity {
     private String b6SixQ;
     private String c6SixQ;
 
+    private String[] questFour;
+    private String[] answersFour;
+
+    private String[] questsFive;
+    private String[] answersFive;
+
+    private String questFive;
+    private String answerFive5;
+
     private int idx;
-    private int idxQ;
 
     private TextView firstQuest;
     private TextView thirdTwoQuest;
+    private TextView fourQuest;
+    private TextView fiveQuest;
 
     private RadioButton a1TwoQ;
     private RadioButton b2TwoQ;
@@ -121,12 +136,56 @@ public class Quiz extends AppCompatActivity {
         e2 = (EditText) findViewById(R.id.e2);
         f2 = (EditText) findViewById(R.id.f2);
 
-        yearWarII = (EditText) findViewById(R.id.year_hitler);
-        causedWarII = (EditText) findViewById(R.id.caused_hitler);
+        fourEdit = (EditText) findViewById(R.id.fourEdit);
+        fiveEdit = (EditText) findViewById(R.id.fiveEdit);
+        causedWarII = (EditText) findViewById(R.id.fiveEdit);
 
         a1 = (RadioButton) findViewById(R.id.a1);
         b1 = (RadioButton) findViewById(R.id.b1);
         c1 = (RadioButton) findViewById(R.id.c1);
+
+
+        fourQuest = (TextView) findViewById(R.id.questPreDef);
+
+        questFour = new String[6];
+
+        questFour[0] = "4°) How old lasted World War II?";
+        questFour[1] = "4°) Who discovered gravity?";
+        questFour[2] = "4°) What force does the round planets?";
+        questFour[3] = "4°) What is the speed of light? (only the numbers)";
+        questFour[4] = "4°) Who was the first man to walk on the moon?";
+        questFour[5] = "4°) Who was the president of Brazil during the Second World War?";
+
+        answersFour = new String[6];
+
+        answersFour[0] = "6";
+        answersFour[1] = "Isaac Newton";
+        answersFour[2] = "Gravity";
+        answersFour[3] = "300.000";
+        answersFour[4] = "Neil Armstrong";
+        answersFour[5] = "Getulio Vargas";
+
+
+        fiveQuest = (TextView) findViewById(R.id.fiveQuestDEF);
+
+        questsFive = new String[6];
+
+        questsFive[0] = "5°) What was the cause of World War II?";
+        questsFive[1] = "5°) Who caused the Second World War?";
+        questsFive[2] = "5°) Which faction Hitler led?";
+        questsFive[3] = "5°) Who developed the principle Expansion in geography?";
+        questsFive[4] = "5°) What is the understanding of the principle of causality?";
+        questsFive[5] = "5°) What geography studies?";
+
+        answersFive = new String[6];
+
+        answersFive[0] = "invasion of poland";
+        answersFive[1] = "Adolf Hitler";
+        answersFive[2] = "Nazis";
+        answersFive[3] = "Friedrich Ratzel";
+        answersFive[4] = "Any cause causes effect";
+        answersFive[5] = "Earth and countries";
+
 
         a1TwoQ = (RadioButton) findViewById(R.id.space);
         b2TwoQ = (RadioButton) findViewById(R.id.earth);
@@ -134,6 +193,8 @@ public class Quiz extends AppCompatActivity {
 
         randomQuestsOne();
         randomQuestsTwo();
+        randomQuestsThree();
+        randomQuestsFive();
 
         firstQuest = (TextView) findViewById(R.id.firstQuest);
         thirdTwoQuest = (TextView) findViewById(R.id.thirdTwoQuest);
@@ -188,11 +249,15 @@ public class Quiz extends AppCompatActivity {
 
         definedOptions();
         definedOptionsTwo();
+        definedAnswer();
+        defineAnswerTwo();
 
         result = new Intent(this, ResultQuiz.class);
 
         firstQuest.setText(quest);
         thirdTwoQuest.setText(TwoQuest);
+        fourQuest.setText(threeQuest);
+        fiveQuest.setText(questFive);
 
     }
 
@@ -219,6 +284,9 @@ public class Quiz extends AppCompatActivity {
         searchAnswerFiveQ();
         searchAnswerSixQ();
 
+        searchAnswerQ3();
+        searchAnswerQ5();
+
         if ("11".equals(a2.getText().toString())) {
             points = points + 0.4;
         }
@@ -237,14 +305,6 @@ public class Quiz extends AppCompatActivity {
         if ("4".equals(f2.getText().toString())) {
             points = points + 0.4;
         }
-
-        if ("6".equals(yearWarII.getText().toString())){
-            points = points + 2;
-        }
-        if ("invasion of poland".equalsIgnoreCase(causedWarII.getText().toString())){
-            points = points + 2;
-        }
-
     }
 
     private void randomQuestsOne(){
@@ -285,8 +345,18 @@ public class Quiz extends AppCompatActivity {
         TwoQuests[4] = (answerFiveQ);
         TwoQuests[5] = (answerSixQ);
 
-        idxQ = new Random().nextInt(TwoQuests.length);
-        TwoQuest = (TwoQuests[idxQ]);
+        idx = new Random().nextInt(TwoQuests.length);
+        TwoQuest = (TwoQuests[idx]);
+    }
+
+    private void randomQuestsThree(){
+        idx = new Random().nextInt(questFour.length);
+        threeQuest = (questFour[idx]);
+    }
+
+    private void randomQuestsFive(){
+        idx = new Random().nextInt(questsFive.length);
+        questFive = (questsFive[idx]);
     }
 
     private void definedOptions(){
@@ -345,6 +415,39 @@ public class Quiz extends AppCompatActivity {
             c3TwoQ.setText(c6SixQ);
         }
 
+    }
+
+        private void definedAnswer(){
+            if (threeQuest.equals(questFour[0])){
+            threeAnswer = answersFour[0];
+            }else if (threeQuest.equals(questFour[1])){
+            threeAnswer = answersFour[1];
+            }else if (threeQuest.equals(questFour[2])){
+            threeAnswer = answersFour[2];
+            }else if (threeQuest.equals(questFour[3])){
+            threeAnswer = answersFour[3];
+            }else if (threeQuest.equals(questFour[4])){
+            threeAnswer = answersFour[4];
+            }else if (threeQuest.equals(questFour[5])){
+            threeAnswer = answersFour[5];
+        }
+
+    }
+
+    private void defineAnswerTwo(){
+        if (questFive.equals(questsFive[0])){
+            answerFive5 = answersFive[0];
+        }else if (questFive.equals(questsFive[1])){
+            answerFive5 = answersFive[1];
+        }else if (questFive.equals(questsFive[2])){
+            answerFive5 = answersFive[2];
+        }else if (questFive.equals(questsFive[3])){
+            answerFive5 = answersFive[3];
+        }else if (questFive.equals(questsFive[4])){
+            answerFive5 = answersFive[4];
+        }else if (questFive.equals(questsFive[5])){
+            answerFive5 = answersFive[5];
+        }
     }
 
 /////////////////////////////////////////////////////////////////////////////////
@@ -570,6 +673,20 @@ public class Quiz extends AppCompatActivity {
             if (c1.isChecked()){
                 points = points + 2;
             }
+        }
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+
+    private void searchAnswerQ3() {
+        if (fourEdit.getText().toString().equalsIgnoreCase(threeAnswer)){
+            points = points + 2;
+        }
+    }
+
+    private void searchAnswerQ5(){
+        if (fiveEdit.getText().toString().equalsIgnoreCase(answerFive5)){
+            points = points + 2;
         }
     }
 
