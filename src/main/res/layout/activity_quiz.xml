@@ -258,16 +258,17 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/questPreDef"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/quest"
             android:text="4°) How old lasted World War II?"/>
 
         <EditText
-            android:id="@+id/year_hitler"
+            android:id="@+id/fourEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"/>
+            android:inputType="text"/>
     </LinearLayout>
 
     <LinearLayout
@@ -278,15 +279,16 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/fiveQuestDEF"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/quest"
             android:text="5°) What was the cause of World War II?"/>
         <EditText
-            android:id="@+id/caused_hitler"
+            android:id="@+id/fiveEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textMultiLine"/>
+            android:inputType="text"/>
     </LinearLayout>
 
         <Button
