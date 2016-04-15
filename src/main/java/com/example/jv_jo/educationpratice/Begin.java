@@ -25,5 +25,6 @@ public class Begin extends AppCompatActivity {
     public void quiz(View view){
         Intent quiz = new Intent(this, Quiz.class);
         startActivity(quiz);
+        finish();
     }
 }
