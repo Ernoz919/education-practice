@@ -58,9 +58,34 @@
                 android:text="English"/>
         </LinearLayout>
 
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Hi"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Yes"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Not"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-How are you?"/>
+
         <LinearLayout
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -81,9 +106,34 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Oi"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Sim"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Não"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Tudo bem?"/>
+
         <LinearLayout
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="05dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -104,9 +154,34 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Salut"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Oui"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Pas"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-D'accord?"/>
+
         <LinearLayout
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="05dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -127,9 +202,34 @@
 
         </LinearLayout>
 
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Hallo"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Ja"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Nicht"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-In Ordnung?"/>
+
         <LinearLayout
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="05dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -149,6 +249,31 @@
                 android:text="Spanish"/>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-¡Hola"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-Sí"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-No"/>
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-¿Todo bien?"/>
 
     </LinearLayout>
 

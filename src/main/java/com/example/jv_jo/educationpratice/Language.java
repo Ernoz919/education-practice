@@ -5,11 +5,6 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class Language extends AppCompatActivity {
-    TextView english;
-    TextView portuguese;
-    TextView french;
-    TextView german;
-    TextView spanish;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
