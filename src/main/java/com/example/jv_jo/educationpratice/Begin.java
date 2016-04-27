@@ -19,7 +19,6 @@ public class Begin extends AppCompatActivity {
     public void book(View view){
         Intent the_book = new Intent(this, TheBookActivity.class);
         startActivity(the_book);
-        finish();
     }
 
     public void quiz(View view){

@@ -216,7 +216,7 @@
         android:orientation="vertical">
 
             <TextView
-                android:id="@+id/thirdTwoQuest"
+                android:id="@+id/thirdQuest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/quest"
@@ -258,7 +258,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/questPreDef"
+            android:id="@+id/fourQuest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/quest"
@@ -279,7 +279,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/fiveQuestDEF"
+            android:id="@+id/fiveQuest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/quest"
