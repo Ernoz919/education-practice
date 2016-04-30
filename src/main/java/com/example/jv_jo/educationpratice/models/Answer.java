@@ -23,4 +23,5 @@ public class Answer extends PersistableEntity{
     public void setCorrect(boolean correct) {
         this.correct = correct;
     }
+    
 }

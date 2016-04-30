@@ -1,7 +1,5 @@
 package com.example.jv_jo.educationpratice.models;
 
-import com.example.jv_jo.educationpratice.enums.Discipline;
-
 import java.util.List;
 
 /**
