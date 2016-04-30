@@ -1,9 +1,11 @@
-package com.example.jv_jo.educationpratice;
+package com.example.jv_jo.educationpratice.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.jv_jo.educationpratice.R;
 
 public class Math extends AppCompatActivity {
     TextView addition;

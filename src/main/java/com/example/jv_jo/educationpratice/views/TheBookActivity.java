@@ -1,9 +1,13 @@
-package com.example.jv_jo.educationpratice;
+package com.example.jv_jo.educationpratice.views;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.jv_jo.educationpratice.R;
+
+import java.lang.*;
 
 public class TheBookActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.jv_jo.educationpratice;
+package com.example.jv_jo.educationpratice.views;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.example.jv_jo.educationpratice.R;
 import com.example.jv_jo.educationpratice.enums.Discipline;
 import com.example.jv_jo.educationpratice.optionsAndAnswers.DefinedQuestions;
 

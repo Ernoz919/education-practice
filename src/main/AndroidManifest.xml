@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Begin" />
-        <activity android:name=".TheBookActivity" />
+        <activity android:name=".views.TheBookActivity" />
         <!--
              ATTENTION: This was auto-generated to add Google Play services to your project for
              App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -19,13 +19,13 @@
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
 
-        <activity android:name=".Language" />
-        <activity android:name=".Math" />
-        <activity android:name=".Science" />
-        <activity android:name=".History" />
-        <activity android:name=".Geography" />
-        <activity android:name=".Quiz" />
-        <activity android:name=".ResultQuiz"></activity>
+        <activity android:name=".views.Language" />
+        <activity android:name=".views.Math" />
+        <activity android:name=".views.Science" />
+        <activity android:name=".views.History" />
+        <activity android:name=".views.Geography" />
+        <activity android:name=".views.Quiz" />
+        <activity android:name=".views.ResultQuiz"></activity>
     </application>
 
 </manifest>

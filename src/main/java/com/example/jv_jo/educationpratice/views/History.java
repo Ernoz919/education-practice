@@ -1,8 +1,10 @@
-package com.example.jv_jo.educationpratice;
+package com.example.jv_jo.educationpratice.views;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.jv_jo.educationpratice.R;
 
 public class History extends AppCompatActivity {
     TextView history;
